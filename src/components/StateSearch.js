@@ -44,6 +44,7 @@ const StateSearch = () => {
         <div className="dropdown is-active">
           <div className="dropdown-trigger">
             <input
+              data-testid="input-test"
               value={query}
               onChange={({ target }) => onSetQuery(target.value)}
               className="input"
