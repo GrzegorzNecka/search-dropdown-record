@@ -13,6 +13,7 @@ const user = {
 // };
 
 const returnNewUser = (user) => {
+  //ta funkcja nie mutuje usera
   return {
     ...user,
     name: 'Marcin',

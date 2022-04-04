@@ -20,4 +20,4 @@ describe('getSelectedItemOnKey', () => {
   it('returns 9 when ArrowDown and current: 9, listLength: 9', () => {
     expect(getSelectedItemOnKey('ArrowDown', 9, 10)).toBe(9);
   });
-})
+});

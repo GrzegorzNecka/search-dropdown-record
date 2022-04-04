@@ -1,15 +1,5 @@
 {
-  "name": "search-dropdown-record",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel src/index.html",
-    "test": "jest --watch"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "bulma": "^0.9.1",
     "caniuse-lite": "^1.0.30001325",
@@ -19,10 +9,24 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
+  "description": "",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^14.0.4",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
-  }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "search-dropdown-record",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "jest --watchAll"
+  },
+  "version": "1.0.0"
 }
