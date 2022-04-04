@@ -1,11 +1,15 @@
+[film](https://www.youtube.com/watch?v=64KGL3NBPzs&list=PLT7X0UTo8GN_nsAlEdVInoRkvE_pmLayP&index=2)
+
 # Search + Dropdown = Wyszukiwarka stanów
 
 ### Linki:
+
 - https://fusejs.io/
 - https://bulma.io/documentation/
 - https://github.com/CivilServiceUSA/us-states
 
 ## Opis projektu
+
 - wyszukiwarka stanów w USA
 - po wpisaniu frazy rozwija się dropdown z pasującymi wynikami
 - wyszukiwanie fuzzy search za pomocą biblioteki `Fuse.js`
@@ -21,7 +25,7 @@ DO DZIEŁA!
 - w tym odcinku pokazuję jak to zrobic - [(instalacja node.js)](https://www.youtube.com/watch?v=fhw9SHtzAX0&feature=youtu.be)
 - przejdź do terminala i wpisz `npm init -y`
 - następnie `npm i -S parcel-bundler`
-- utwórz katalog `src` a w nim plik `index.js`, zrób jakiś  `hello world`
+- utwórz katalog `src` a w nim plik `index.js`, zrób jakiś `hello world`
 - utwórz plik `index.html` i wypełnij go treścią
 - dodaj tag script do pliku js
 - w pliku `package.json` dodaj `"start": "parcel src/index.html"`
@@ -30,7 +34,7 @@ DO DZIEŁA!
 
 ## Instalacja Reacta i Bulmy
 
-- z Parcelem jest bardzo proste 
+- z Parcelem jest bardzo proste
 - przejdź do pliku `index.js` i importuj co potrzebne, Parcel pobiera w tle
 - dodaj jeszcze `div` z odpowiednim id do `index.html`
 - zatrzymaj serwer
@@ -59,7 +63,7 @@ DO DZIEŁA!
 
 - filtruj listę po zmianie `query`, wykorzystaj hook `useEffect`
 - w środku funkcji filtruj listę na podstawię `query`
-- wtedy zapisz nową listę wyników 
+- wtedy zapisz nową listę wyników
 - utwórz stan stan takiej listy - useState
 - do wyszukiwania uzyj [biblioteki fuse.js](https://fusejs.io/)
 - przejdź do dokumentacji i sprawdź jak zainstalować i jak używać
