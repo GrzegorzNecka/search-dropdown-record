@@ -5,12 +5,7 @@ import { SearchStateContext } from '../hooks/useSearchState';
 import { getSelectedItemOnKey } from '../utils/getSelectedItemOnKey';
 
 const StateSearch = () => {
-  const {
-    query,
-    onSetQuery,
-    list,
-    onPick,
-  } = useContext(SearchStateContext);
+  const { query, onSetQuery, list, onPick } = useContext(SearchStateContext);
   const [selected, setSelected] = useState(0);
   const [focused, setFocused] = useState(false);
   const wrapperRef = useRef(null);
@@ -18,7 +13,7 @@ const StateSearch = () => {
   const _onPick = (item) => {
     onPick(item);
     setFocused(false);
-  }
+  };
 
   const onKeyUp = (event) => {
     const { key } = event;
@@ -37,10 +32,7 @@ const StateSearch = () => {
     }
   };
 
-  useOnClickOrFocusOutside(
-    wrapperRef,
-    () => setFocused(false),
-  );
+  useOnClickOrFocusOutside(wrapperRef, () => setFocused(false));
 
   useEffect(() => {
     setSelected(0);
@@ -62,7 +54,7 @@ const StateSearch = () => {
             />
           </div>
           {focused && list.length > 0 && (
-            <div className="dropdown-menu">
+            <div data-testid="dropdown-test-menu" className="dropdown-menu">
               <div className="dropdown-content">
                 {list.map((item, index) => {
                   const { state } = item;
