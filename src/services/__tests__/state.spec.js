@@ -1,4 +1,4 @@
-import { getState } from '../state';
+import { getState, searchStates } from '../state';
 import states from './../states.json';
 
 const testStates = [
@@ -30,5 +30,24 @@ describe('getState', () => {
 
   it('returns undefined for empty string', () => {
     expect(getState('', testStates)).toEqual(undefined);
+  });
+});
+
+describe('searchStates', () => {
+  it('returns AL, AK for query: al, key: state', () => {
+    expect(searchStates('al', 'state', testStates)).toEqual([
+      {
+        state: 'Alabama',
+        code: 'AL',
+      },
+      {
+        state: 'Alaska',
+        code: 'AK',
+      },
+    ]);
+  });
+
+  it('returns Aempty array for query: empty string, key: state', () => {
+    expect(searchStates('', 'state', testStates)).toEqual([]);
   });
 });
